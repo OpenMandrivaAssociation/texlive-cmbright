@@ -1,3 +1,9 @@
+# revision 21107
+# category Package
+# catalog-ctan /fonts/cmbright
+# catalog-date 2007-01-01 00:37:00 +0100
+# catalog-license lppl
+# catalog-version 8.1
 Name:		texlive-cmbright
 Version:	8.1
 Release:	1
@@ -228,6 +234,7 @@ and the maths fonts).
 #- source
 %doc %{_texmfdistdir}/source/latex/cmbright/cmbright.dtx
 %doc %{_texmfdistdir}/source/latex/cmbright/cmbright.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -238,3 +245,5 @@ and the maths fonts).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
