@@ -234,3 +234,18 @@ and the maths fonts).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 8.1-2
++ Revision: 750259
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 8.1-1
++ Revision: 718076
+- texlive-cmbright
+- texlive-cmbright
+- texlive-cmbright
+- texlive-cmbright
+- texlive-cmbright
+
