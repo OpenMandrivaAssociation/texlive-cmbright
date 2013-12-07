@@ -6,7 +6,7 @@
 # catalog-version 8.1
 Name:		texlive-cmbright
 Version:	8.1
-Release:	5
+Release:	6
 Summary:	Computer Modern Bright fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cmbright
