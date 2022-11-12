@@ -1,19 +1,13 @@
-# revision 21107
-# category Package
-# catalog-ctan /fonts/cmbright
-# catalog-date 2007-01-01 00:37:00 +0100
-# catalog-license lppl
-# catalog-version 8.1
 Name:		texlive-cmbright
-Version:	8.1
-Release:	11
+Version:	21107
+Release:	1
 Summary:	Computer Modern Bright fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cmbright
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.r21107.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.doc.r21107.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.source.r21107.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -32,12 +26,12 @@ part of the set), and in the hfbright (the OT1 encoded part,
 and the maths fonts).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -227,25 +221,11 @@ and the maths fonts).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 8.1-2
-+ Revision: 750259
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 8.1-1
-+ Revision: 718076
-- texlive-cmbright
-- texlive-cmbright
-- texlive-cmbright
-- texlive-cmbright
-- texlive-cmbright
-
