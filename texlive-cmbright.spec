@@ -5,9 +5,9 @@ Summary:	Computer Modern Bright fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cmbright
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.r21107.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.doc.r21107.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.source.r21107.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmbright.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
