@@ -1,6 +1,6 @@
 Name:		texlive-cmbright
 Version:	21107
-Release:	1
+Release:	2
 Summary:	Computer Modern Bright fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cmbright
